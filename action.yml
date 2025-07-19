@@ -1,0 +1,8 @@
+name: "Notify backend on PR events"
+description: "Send pull request & comment data to backend"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  env:
+    BACKEND_URL: ""
+    SECRET_TOKEN: ""
